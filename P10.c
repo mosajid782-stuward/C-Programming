@@ -15,6 +15,7 @@ int main () {
     printf("11.program to check number is even or odd\n");
     printf("12.some physics formula\n");
     printf("13.find avg. no. of 3 number\n");
+    printf("14.program to check char is digit or not\n");
     printf("Enter choice: \n");
     scanf("%d",&choice);
     switch(choice) {
@@ -176,6 +177,19 @@ int main () {
             scanf("%f",&z);
             Avg=(x+y+z)/3.0;
             printf("Average is:%.2f",Avg);
+            break;
+        }
+    //case 14..
+        case 14:{
+            char ch;
+            printf("Enter character:\n");
+            scanf("%c",&ch);
+            if( ch== 0 && ch>=9) {
+                printf(" it is digit \n");
+            }
+            else {
+                printf("it is not digit");
+            }
             break;
         }
 
