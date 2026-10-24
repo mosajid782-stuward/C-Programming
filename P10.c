@@ -1,3 +1,6 @@
+/*
+   This shows what i read in last 4 days.........
+*/
 #include<stdio.h>
 #include<math.h>
 int main () {
