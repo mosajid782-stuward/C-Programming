@@ -20,6 +20,7 @@ int main () {
     printf("16.find smallest no. in 3 number \n");
     printf("17.find largest no. in 2 number \n");
     printf("18.find largest no. in 3 number \n");
+    printf("19.print MCQ's \n");
     printf("Enter choice: \n");
     scanf("%d",&choice);
     switch(choice) {
@@ -275,6 +276,24 @@ int main () {
             }
             else {
                 printf("c is big \n");
+            }
+            break;
+        }
+    //case 19..
+        case 19: {
+            int choice;
+            printf("Question: WHAT IS THE CAPITAL OF INDIA? \n");
+            printf("1.Kolkata \n");
+            printf("2.Lucknow \n");
+            printf("3.New Delhi \n");
+            printf("4. Pune \n");
+            printf("choice :\n");
+            scanf("%d",&choice);
+            if(choice == 3) {
+                printf(" Correct Answer \n");
+            }
+            else {
+                printf("Wrong Answer \n");
             }
             break;
         }
