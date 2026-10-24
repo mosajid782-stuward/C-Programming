@@ -16,6 +16,7 @@ int main () {
     printf("12.some physics formula\n");
     printf("13.find avg. no. of 3 number\n");
     printf("14.program to check char is digit or not\n");
+    printf("15.find smallest number in two numbers\n");
     printf("Enter choice: \n");
     scanf("%d",&choice);
     switch(choice) {
@@ -189,6 +190,24 @@ int main () {
             }
             else {
                 printf("it is not digit");
+            }
+            break;
+        }
+    //case 15..
+        case 15: {
+            int a,b;
+            printf("Enter a:\n");
+            scanf("%d",&a);
+            printf("Enter b:\n");
+            scanf("%d",&b);
+            if(a>b) {
+                printf("b is small \n");
+            }
+            else if(b>a) {
+                printf("a is small \n");
+            }
+            else {
+                printf(" Both are equal \n");
             }
             break;
         }
