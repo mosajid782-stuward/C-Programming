@@ -19,6 +19,7 @@ int main () {
     printf("15.find smallest number in two numbers\n");
     printf("16.find smallest no. in 3 number \n");
     printf("17.find largest no. in 2 number \n");
+    printf("18.find largest no. in 3 number \n");
     printf("Enter choice: \n");
     scanf("%d",&choice);
     switch(choice) {
@@ -251,6 +252,29 @@ int main () {
             }
             else {
                 printf("Both are equal \n");
+            }
+            break;
+        }
+    //case 18..
+        case 18: {
+            int a,b,c;
+            printf("Enter a:\n");
+            scanf("%d",&a);
+            printf("Enter b:\n");
+            scanf("%d",&b);
+            printf("Enter c:\n");
+            scanf("%d",&c);
+            if(a==b && b==c) {
+                printf("all are equal \n");
+            }
+            else if(a>b && a>c) {
+                printf(" a is big \n");
+            }
+            else if(b>a && b>c) {
+                printf("b is big \n");
+            }
+            else {
+                printf("c is big \n");
             }
             break;
         }
