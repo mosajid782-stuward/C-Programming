@@ -1,5 +1,5 @@
 /*
-this is a source code of P1 to P9 ....
+this is a source code of P1 to P4 ....
 */
 #include<stdio.h>
 int main () {
@@ -41,6 +41,18 @@ int main () {
             scanf("%d",&x);
             printf("%d \n",(x%2)==0);
             break;
+        }
+    //codefile 4..
+        case 4: {
+            char ch;
+            printf("Enter a character:");
+            scanf("%c",&ch);
+            if(ch>='0' && ch<='9') {
+
+                printf("It is a Digit ");
+            } else {
+                printf("It is not a Digit");
+            }
         }
 
     }
