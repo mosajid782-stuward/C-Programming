@@ -11,6 +11,7 @@ int main () {
     printf("7.find area o cubide\n");
     printf("8.find parametar of circle\n");
     printf("9.celcius to fahrenheit conversion\n");
+    printf("10.fahrenheit to celcius conversion\n");
     printf("Enter choice: \n");
     scanf("%d",&choice);
     switch(choice) {
@@ -89,6 +90,14 @@ int main () {
             scanf("%f",&c);
             f=9.0/5.0*c+32.0;
             printf("fhrenheit is:%.2f",f);
+        }
+    //case 10..
+        case 10: {
+            float c,f;
+            printf("Enter fahrenheit temp:\n");
+            scanf("%f",&f);
+            c=(f-32.0)*5.0/9.0;
+            printf("celcius is:%.2f",c);
         }
     }
     return 0;
