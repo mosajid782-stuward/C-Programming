@@ -17,6 +17,7 @@ int main () {
     printf("13.find avg. no. of 3 number\n");
     printf("14.program to check char is digit or not\n");
     printf("15.find smallest number in two numbers\n");
+    printf("16.find smallest no. in 3 number \n");
     printf("Enter choice: \n");
     scanf("%d",&choice);
     switch(choice) {
@@ -208,6 +209,29 @@ int main () {
             }
             else {
                 printf(" Both are equal \n");
+            }
+            break;
+        }
+    //case 16..
+        case 16: {
+            int a, b, c;
+            printf("Enter a:\n");
+            scanf("%d",&a);
+            printf("Enter b:\n");
+            scanf("%d",&b);
+            printf("Enter c:\n");
+            scanf("%d",&c);
+            if(a==b && a==c) {
+                printf("All are equal \n");
+            }
+            else if(a<b && a<c) {
+                printf("a is small \n");
+            }
+            else if(b<a && b<c) {
+                printf("b is small \n");
+            }
+            else {
+                printf("c is small \n");
             }
             break;
         }
