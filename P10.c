@@ -4,6 +4,7 @@ int main () {
     printf("1.Hello world \n");
     printf("2.add two variable \n");
     printf("3.multipule of two variable \n");
+    printf("4.Find area of square \n");
     printf("Enter choice: \n");
     scanf("%d",&choice);
     switch(choice) {
@@ -30,6 +31,14 @@ int main () {
             scanf("%d",&b);
             product=a*b;
             printf("product is:%d\n",product);
+        }
+    //case 4..
+        case 4: {
+            float x,area;
+            printf("Enter side:x \n");
+            scanf("%f",&x);
+            area=x*x;
+            printf("area is:%.2f\n",area);
         }
     }
     return 0;
