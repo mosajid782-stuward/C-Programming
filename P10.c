@@ -1,10 +1,12 @@
 #include<stdio.h>
+#include<math.h>
 int main () {
     int choice;
     printf("1.Hello world \n");
     printf("2.add two variable \n");
     printf("3.multipule of two variable \n");
     printf("4.Find area of square \n");
+    printf("5.finf area of circle \n");
     printf("Enter choice: \n");
     scanf("%d",&choice);
     switch(choice) {
@@ -38,6 +40,14 @@ int main () {
             printf("Enter side:x \n");
             scanf("%f",&x);
             area=x*x;
+            printf("area is:%.2f\n",area);
+        }
+    //case 5..
+        case 5: {
+            float r,area;
+            printf("Enter radius:\n");
+            scanf("%f",&r);
+            area=3.14*(pow(r,2));
             printf("area is:%.2f\n",area);
         }
     }
