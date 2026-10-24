@@ -34,6 +34,14 @@ int main () {
             printf("Area of Circle:%.2f",(3.14*r*r));
             break;
         }
+    //codefile 3..
+        case 3: {
+            int x;
+            printf("Enter number x:");
+            scanf("%d",&x);
+            printf("%d \n",(x%2)==0);
+            break;
+        }
 
     }
 
