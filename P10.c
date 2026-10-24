@@ -18,6 +18,7 @@ int main () {
     //case 1..
         case 1: {
             printf("HELLO WORLD \n");
+            break;
         }
     //case 2..
         case 2: {
@@ -28,6 +29,7 @@ int main () {
             scanf("%d",&b);
             sum=a+b;
             printf(" sum is :%d\n",sum);
+            break;
         }
     //case 3...
         case 3: {
@@ -38,6 +40,7 @@ int main () {
             scanf("%d",&b);
             product=a*b;
             printf("product is:%d\n",product);
+            break;
         }
     //case 4..
         case 4: {
@@ -46,6 +49,7 @@ int main () {
             scanf("%f",&x);
             area=x*x;
             printf("area is:%.2f\n",area);
+            break;
         }
     //case 5..
         case 5: {
@@ -54,6 +58,7 @@ int main () {
             scanf("%f",&r);
             area=3.14*(pow(r,2));
             printf("area is:%.2f\n",area);
+            break;
         }
     //case 6..
         case 6: {
@@ -62,6 +67,7 @@ int main () {
             scanf("%f",&side);
             area=pow(side,3);
             printf("area is:%.2f",area);
+            break;
         }
     //case 7..
         case 7: {
@@ -74,6 +80,7 @@ int main () {
             scanf("%f",&h);
             area=(l*b*h);
             printf("area is:%.2f",area);
+            break;
         }
     //case 8..
         case 8: {
@@ -82,6 +89,7 @@ int main () {
             scanf("%f",&r);
             para=2.0*3.14*r;
             printf("parametar is:%.2f",para);
+            break;
         }
     //case 9..
         case 9: {
@@ -90,6 +98,7 @@ int main () {
             scanf("%f",&c);
             f=9.0/5.0*c+32.0;
             printf("fhrenheit is:%.2f",f);
+            break;
         }
     //case 10..
         case 10: {
@@ -98,6 +107,7 @@ int main () {
             scanf("%f",&f);
             c=(f-32.0)*5.0/9.0;
             printf("celcius is:%.2f",c);
+            break;
         }
     }
     return 0;
