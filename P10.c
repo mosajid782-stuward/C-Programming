@@ -2,11 +2,23 @@
 int main () {
     int choice;
     printf("1.Hello world \n");
+    printf("2.add two variable \n");
     printf("Enter choice: \n");
     scanf("%d",&choice);
     switch(choice) {
+    //case 1..
         case 1: {
-            Printf("HELLO WORLD \n");
+            printf("HELLO WORLD \n");
+        }
+    //case 2..
+        case 2: {
+            int a,b,sum;
+            printf("Enter a:\n ");
+            scanf("%d",&a);
+            printf("Enter b: \n");
+            scanf("%d",&b);
+            sum=a+b;
+            printf(" sum is :%d\n",sum);
         }
     }
     return 0;
