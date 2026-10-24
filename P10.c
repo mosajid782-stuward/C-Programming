@@ -18,6 +18,7 @@ int main () {
     printf("14.program to check char is digit or not\n");
     printf("15.find smallest number in two numbers\n");
     printf("16.find smallest no. in 3 number \n");
+    printf("17.find largest no. in 2 number \n");
     printf("Enter choice: \n");
     scanf("%d",&choice);
     switch(choice) {
@@ -232,6 +233,24 @@ int main () {
             }
             else {
                 printf("c is small \n");
+            }
+            break;
+        }
+    //case 17..
+        case 17: {
+            int a,b;
+            printf("Enter a:\n");
+            scanf("%d",&a);
+            printf("Enter b:\n");
+            scanf("%d",&b);
+            if( a>b) {
+                printf("a is big \n");
+            }
+            else if(b>a) {
+                printf("b is big \n");
+            }
+            else {
+                printf("Both are equal \n");
             }
             break;
         }
