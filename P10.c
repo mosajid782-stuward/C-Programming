@@ -13,6 +13,7 @@ int main () {
     printf("9.celcius to fahrenheit conversion\n");
     printf("10.fahrenheit to celcius conversion\n");
     printf("11.program to check number is even or odd\n");
+    printf("12.some physics formula\n");
     printf("Enter choice: \n");
     scanf("%d",&choice);
     switch(choice) {
@@ -122,6 +123,48 @@ int main () {
             }
             break;
         }
+    //case 12..
+        case 12: {
+            int choice;
+            printf("1.force calculate \n");
+            printf("2.kinetic energy calculate \n");
+            printf("3.momentum calculate \n");
+            printf("Enter choice\n");
+            switch(choice) {
+                case 1: {
+                    float m,a,F;
+                    printf("Enter mass:\n");
+                    scanf("%f",&m);
+                    printf("Enyter acceleration:\n");
+                    scanf("%f",&a);
+                    F=m*a;
+                    printf("force is:%.2f",F);
+                    break;
+                }
+                case 2: {
+                    float m,v,K;
+                    printf("Enter mass:\n");
+                    scanf("%f",&m);
+                    printf("Enter velocity:\n");
+                    scanf("%f",&v);
+                    K=1.0/2.0*m*(pow(v,2));
+                    printf("K.E is:%.2f",K);
+                    break;
+                }
+                case 3: {
+                    float m,v,P;
+                    printf("Enter mass:\n");
+                    scanf("%f",&m);
+                    printf("Enter velocity:\n");
+                    scanf("%f",&v);
+                    P=m*v;
+                    printf("Momentumis:%.2f",P);
+                    break;
+                }
+            }
+            break;
+        }
+
     }
     return 0;
 }
