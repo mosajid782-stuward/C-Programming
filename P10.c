@@ -9,6 +9,7 @@ int main () {
     printf("5.find area of circle \n");
     printf("6.find area of cube \n");
     printf("7.find area o cubide\n");
+    printf("8.find parametar of circle\n");
     printf("Enter choice: \n");
     scanf("%d",&choice);
     switch(choice) {
@@ -71,6 +72,14 @@ int main () {
             scanf("%f",&h);
             area=(l*b*h);
             printf("area is:%.2f",area);
+        }
+    //case 8..
+        case 8: {
+            float r,para;
+            printf("Enter radius:\n");
+            scanf("%f",&r);
+            para=2.0*3.14*r;
+            printf("parametar is:%.2f",para);
         }
     }
     return 0;
