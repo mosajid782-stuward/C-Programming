@@ -7,6 +7,7 @@ int main () {
     printf("3.multipule of two variable \n");
     printf("4.Find area of square \n");
     printf("5.finf area of circle \n");
+    printf("6.find area of cube \n");
     printf("Enter choice: \n");
     scanf("%d",&choice);
     switch(choice) {
@@ -49,6 +50,14 @@ int main () {
             scanf("%f",&r);
             area=3.14*(pow(r,2));
             printf("area is:%.2f\n",area);
+        }
+    //case 6..
+        case 6: {
+            float side,area;     
+            printf("Enter Side:\n");
+            scanf("%f",&side);
+            area=pow(side,3);
+            printf("area is:%.2f",area);
         }
     }
     return 0;
