@@ -14,6 +14,7 @@ int main () {
     printf("10.fahrenheit to celcius conversion\n");
     printf("11.program to check number is even or odd\n");
     printf("12.some physics formula\n");
+    printf("13.find avg. no. of 3 number\n");
     printf("Enter choice: \n");
     scanf("%d",&choice);
     switch(choice) {
@@ -162,6 +163,19 @@ int main () {
                     break;
                 }
             }
+            break;
+        }
+    //case 13..
+        case 13: {
+            float x,y,z,Avg;
+            printf("Enter x:\n");
+            scanf("%f",&x);
+            printf("Enter y:\n");
+            scanf("%f",&y);
+            printf("Enter z:\n");
+            scanf("%f",&z);
+            Avg=(x+y+z)/3.0;
+            printf("Average is:%.2f",Avg);
             break;
         }
 
