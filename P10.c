@@ -12,6 +12,7 @@ int main () {
     printf("8.find parametar of circle\n");
     printf("9.celcius to fahrenheit conversion\n");
     printf("10.fahrenheit to celcius conversion\n");
+    printf("11.program to check number is even or odd\n");
     printf("Enter choice: \n");
     scanf("%d",&choice);
     switch(choice) {
@@ -107,6 +108,18 @@ int main () {
             scanf("%f",&f);
             c=(f-32.0)*5.0/9.0;
             printf("celcius is:%.2f",c);
+            break;
+        }
+    //case 11..
+        case 11: {
+            int num;
+            printf("Enter number:\n");
+            scanf("%d",&num);
+            if(num%2==0) {
+                printf("number is even \n");
+            } else {
+                printf("number is odd \n");
+            }
             break;
         }
     }
